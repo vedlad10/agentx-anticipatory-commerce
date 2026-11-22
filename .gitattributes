@@ -1,0 +1,4 @@
+# Keep the official starter kit and the result files byte-identical on every platform.
+kit/** -text
+outputs/** -text
+* text=auto eol=lf

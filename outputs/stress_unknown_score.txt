@@ -1,0 +1,19 @@
+agent               agent.py
+requests            300   (stress_unknown.jsonl)
+accuracy            0.670   (baseline 0.353)
+wrong commits       0 in 0 requests
+earliness           0.39 words before the end (2.7% of the request)
+searches/request    1.00   (wasted 0.00)
+latency             0.99 ms/word, p95 3.41 ms
+SCORE               28.4   (baseline 13.6)
+
+by tag              n    accuracy  wrong  earliness  score
+  code_mixed          25    0.760      0      4.7%    33.2
+  correction          55    0.782      0      5.9%    34.8
+  late_constraint     50    0.600      0      4.0%    26.4
+  plain              177    0.650      0      1.4%    26.8
+
+filters you reported at the last word, vs the gold ones (300 requests):
+  category 0.58  colour 0.66  size 1.00  brand 1.00  max_price 1.00
+
+per-request results: outputs/stress_unknown_results.jsonl
